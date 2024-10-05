@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--=============== Favicon ===============-->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="assets/favicon/android-chrome-512x512.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="assets/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+  <link rel="stylesheet" href="assets/css/nav-footer.css">
+  <link rel="stylesheet" href="assets/css/contact.css">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script defer type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+  <script defer src="assets/js/mail.js"></script>
+  <script defer src="assets/js/nav.js"></script>
+  <title>Contact | Deen Marine Trade</title>
+</head>
+
+<body class="bg">
+  <div id="loader" class="loader"><img src="assets/images/loader.png" alt=""></div>
+  <header class="navigation">
+    <div class="nav-container">
+      <div class="brand">
+        <a href="index.html">Deen Marine Trade</a>
+      </div>
+      <nav>
+        <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+        <ul class="nav-list">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="about.html">About</a>
+          </li>
+          <li>
+            <a href="#!">We Supply</a>
+            <ul class="nav-dropdown">
+              <li>
+                <a href="spare-parts.html">Ship Spare Parts</a>
+              </li>
+              <li>
+                <a href="stores-supply.html">Ship Stores Supply</a>
+              </li>
+              <li>
+                <a href="provision-supply.html">Provision Supply</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#!">Services</a>
+            <ul class="nav-dropdown">
+              <li>
+                <a href="ship-repair.html">Ship Repair</a>
+              </li>
+              <li>
+                <a href="painting.html">Chipping & Painting</a>
+              </li>
+              <li>
+                <a href="cleaning-service.html">Cleaning Service</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="contact.html" class="active">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div id="overlay"></div>
+
+  <main>
+    <div class="contact-heading">
+      <h2>Contact Us</h2>
+    </div>
+    <div class="container">
+      <div class="contact-form-section">
+        <div class="contact-form">
+          <h2>Send Us a Message</h2>
+          <form id="contactForm" onsubmit="sendEmail(event)">
+            <input autocomplete="off" type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input autocomplete="off" type="text" name="subject" placeholder="Subject" required>
+            <textarea autocomplete="off" name="message" placeholder="Message" required></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+        <div class="contact-details">
+          <h2>Our <span style="border-bottom: 3px solid #362487bb;">Office</span></h2>
+          <ul>
+            <li><i class="fas fa-map-marker-alt"></i>Hajipara, Century Tower, 404, Agrabad, Chittagong</li>
+            <li><i class="fas fa-phone"></i>+8801792065536</li>
+            <li><i class="fab fa-square-whatsapp" style="padding-top: 2px; font-size: 20px;"></i>+8801680573191</li>
+            <li><i class="fas fa-envelope"></i>Xyz@gmail.com</li>
+            <li><i class="fas fa-globe"></i>www.deen_marine.com</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-sm-4 col-xs-12">
+          <div class="single_footer">
+            <h4>Find us</h4>
+            <ul>
+              <li><a href="contact.html"><i class="fa-solid fa-location-dot"></i> Hajipara, Century Tower, 404, Agrabad,
+                  Chittagong</a></li>
+              <li><a href="contact.html"><i class="fa-solid fa-square-phone"></i> +8801792065536</a></li>
+              <li><a href="contact.html"><i class="fa-solid fa-square-phone"></i> +8801680573191</a></li>
+              <li><a href="contact.html"><i class="fa-solid fa-envelope"></i> mail@xyz.com</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-4 col-xs-12">
+          <div class="single_footer single_footer_address">
+            <h4>Pages</h4>
+            <ul>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="spare-parts.html">Ship Spare Parts</a></li>
+              <li><a href="ship-repair.html">Ship Repair</a></li>
+              <li><a href="stores-supply.html">Ship Stores Supply</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-4 col-xs-12">
+          <div class="single_footer single_footer_address">
+            <h4>Get In Touch</h4>
+            <div class="social-div">
+              <a href="mailto:test@test.com">
+                <button class="btn btn-outline-light btn-md">
+                  Mail Us
+                </button>
+              </a>
+              <a href="https://wa.link/4ov9do" class="social_profile btn btn-outline-light btn-md"><i
+                  class="footer-i fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12 col-sm-12 col-xs-12">
+          <p class="copyright">Copyright © 2024 <a href="about.html">Deen Marine Trade</a>.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
