@@ -1,0 +1,135 @@
+/* Global Styles */
+:root {
+  --main-bg: #f8f9fa;
+  --primary-color: #ffffff;
+  --primary-shade: #d4d4d4;
+  --secondary-color: #362487;
+  --accent-color: #565e64;
+}
+
+@font-face {
+  font-family: "roboto";
+  src: url("../font/Roboto-Regula.ttf");
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../font/Poppins-Regular.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  margin-top: 100px;
+}
+
+.fa-broom {
+  opacity: 0.5;
+}
+
+
+.about-heading {
+  position: relative; 
+
+  color: #2c3e50;
+  text-align: center;
+  text-transform: uppercase; 
+  letter-spacing: 1.5px; 
+  margin: 40px 0;
+  font-weight: 700; 
+  background: linear-gradient(rgba(44, 20, 124, 0.9), rgba(11, 21, 108, 0.8)),
+    url("../images/vertical-large-sunset-ship.jpg");
+  background-position: 50% 50%;
+  background-size: cover;
+  color: var(--primary-color);
+  margin: 0 0 35px 0;
+  border-radius: 5px;
+  padding: 1.3rem 0;
+  transition: 0.3s ease;
+}
+
+.about-heading::after {
+  content: "";
+  display: block;
+  width: 80px; 
+  height: 5px;
+  background: var(--primary-shade); 
+  margin: 10px auto; 
+  border-radius: 5px; 
+  box-shadow: 0 4px 15px rgba(231, 76, 60, 0.5);
+  transition: width 0.3s ease; 
+  letter-spacing: -1;
+}
+
+.about-heading:hover {
+  letter-spacing: 4px;
+}
+
+.about-heading:hover::after {
+  width: 130px; 
+}
+
+.about-heading h2 {
+  padding: 0px 4px;
+  font-size: 2rem !important;
+  font-weight: 900;
+}
+
+.highlight {
+  color: #2c147c;
+  font-weight: bold;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.7rem;
+  margin-bottom: 20px;
+}
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.service-box {
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 8px;
+  flex: 1 1 45%; 
+}
+
+.service-box h3 {
+  color: #2c147c;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+.service-box p {
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+
+@media (max-width: 450px) {
+  .about-heading::after {
+    width: 50px;
+  }
+
+  .about-heading:hover::after {
+    width: 100px;
+  }
+}

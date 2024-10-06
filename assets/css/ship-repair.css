@@ -1,0 +1,163 @@
+:root {
+    --main-bg: #f8f9fa;
+    --primary-color: #ffffff;
+    --primary-shade: #d4d4d4;
+    --secondary-color: #362487;
+    --accent-color: #565e64;
+  }
+  
+  @font-face {
+    font-family: "roboto";
+    src: url("../font/Roboto-Regula.ttf");
+  }
+  @font-face {
+    font-family: "Poppins";
+    src: url("../font/Poppins-Regular.ttf");
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+  }
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+
+main{
+    margin-top: 110px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+
+}
+
+h3 {
+    color: var(--secondary-color) !important;
+    margin-top: 20px;
+    font-size: 1.7rem !important;
+}
+
+p{
+    font-size: 1.1rem;
+}
+
+
+.highlight {
+    color: var(--secondary-color); 
+}
+
+.r-cogs {
+    transform: scaleY(-1);
+    opacity: 0.3;
+    display: inline-block;
+    position: relative; 
+  }
+  
+  .l-cogs {
+    opacity: 0.3;
+  }
+
+.modern-heading {
+    position: relative;
+    font-size: 2.8rem; 
+    color: #2c3e50;
+    text-align: center;
+    text-transform: uppercase; 
+    letter-spacing: 1.5px; 
+    margin: 40px 0; 
+    font-weight: 700; 
+    background: linear-gradient(rgba(44, 20, 124, 0.9), rgba(11, 21, 108, 0.8)),
+    url("../images/ship-repair.jpg");
+  background-position: 50% 60%;
+  background-size: cover;
+  color: var(--primary-color);
+  margin: 0 0 35px 0;
+  border-radius: 5px;
+  padding: 1.3rem 5px;
+  transition:  0.3s ease;
+}
+
+
+.modern-heading::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 5px; 
+    background: var(--primary-color); 
+    margin: 10px auto; 
+    border-radius: 5px; 
+    box-shadow: 0 4px 15px rgba(231, 76, 60, 0.5); 
+    transition: width 0.3s ease; 
+}
+
+.modern-heading:hover {
+    letter-spacing: 5px;
+}
+
+.modern-heading:hover::after {
+    width: 150px;
+}
+
+.services-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.service-item {
+    flex: 1 1 30%;
+    background-color: #f4f4f4; 
+    border: 1px solid #dee2e6; 
+    border-radius: 5px; 
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s; 
+}
+
+.service-item:hover {
+    transform: scale(1.05); 
+}
+
+.service-title {
+    font-size: 1.3rem;
+    /* font-weight: 600; */
+    margin-bottom: 10px;
+    color: var(--secondary-color) ;
+}
+
+
+@media (max-width: 768px) {
+    .services-box {
+        flex-direction: column;
+    }
+    
+    .service-item {
+        flex: 1 1 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .modern-heading{
+        font-size: 2.2rem;
+    }
+
+    .modern-heading::after {
+        width: 80px;
+        height: 3px; 
+        background: #ffffffbe;
+    }
+}
+
