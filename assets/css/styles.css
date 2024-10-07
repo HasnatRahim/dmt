@@ -38,6 +38,9 @@ body {
   justify-content: center;
 }
 
+.img-0 {
+  background-image: url("../images/food-container.jpg");
+}
 .img-1 {
   background-image: url("../images/vertical-large-sunset-ship.jpg");
 }
